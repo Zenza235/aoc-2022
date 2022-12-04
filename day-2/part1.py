@@ -5,3 +5,10 @@
 # Win == 6
 # Draw == 3
 # Lose == 0
+
+import sys
+
+with open(f'{sys.argv[1]}.txt', 'r') as f:
+    input = f.read().splitlines()
+
+print(input)
