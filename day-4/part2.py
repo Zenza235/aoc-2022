@@ -1,12 +1,8 @@
 import sys
 import re
-import math
 
 with open(f'{sys.argv[1]}.txt', 'r') as f:
     input = f.read().splitlines()
-
-def product(start: int, end: int) -> int:
-    return math.prod(range(start, end + 1))
 
 overlap_total = 0
 
