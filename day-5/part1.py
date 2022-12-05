@@ -10,10 +10,18 @@ num_stacks = int(input[split - 1].strip()[-1])
 
 sd = [a.split(' ') for a in stack_data]
 
-print(sd)
+stacks = []
 
-for i in range(num_stacks, 0, -1):
-    print(i)
+for s in range(len(sd[0])):
+    stack = []
+    for i in range(len(sd) - 1, -1, -1):
+        str = sd[i][s]
+        if str != '':
+            stack.append(str[1])
+
+    stacks.append(stack)
+
+print(stacks)
 
 # TODO parsing stacks into respective arrays
 # look into condensing stack operations someway
