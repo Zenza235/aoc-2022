@@ -23,7 +23,6 @@ for s in range(len(sd[0])):
 
 print(stacks)
 
-# TODO parsing stacks into respective arrays
 # look into condensing stack operations someway
 # compare start of test to end of test, find pattern in instruction
 # (e.g. elements on top determinable by number of operations done on each stack, etc.)
