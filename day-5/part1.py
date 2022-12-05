@@ -6,9 +6,14 @@ with open(f'{sys.argv[1]}.txt', 'r') as f:
 split = input.index('')
 instructions = input[split + 1 : ]
 stack_data = input[ : split - 1]
-num_stacks = input[split - 1].strip()[-1]
+num_stacks = int(input[split - 1].strip()[-1])
 
-sd = [a.strip().split(' ') for a in stack_data]
+sd = [a.split(' ') for a in stack_data]
+
+print(sd)
+
+for i in range(num_stacks, 0, -1):
+    print(i)
 
 # TODO parsing stacks into respective arrays
 # look into condensing stack operations someway
